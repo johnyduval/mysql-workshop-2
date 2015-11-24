@@ -1,0 +1,14 @@
+select count(*), name, id from AddressBook group by accountId order by count(*) desc limit 1;                                              
++----------+------------------------+-----+
+| count(*) | name                   | id  |
++----------+------------------------+-----+
+|       19 | Justo Nec Incorporated | 108 |
++----------+------------------------+-----+
+
+select count(*), id, firstName, lastName from Entry group by addressBookId order by count(*) desc limit 1;                                 
++----------+----+-----------+----------+
+| count(*) | id | firstName | lastName |
++----------+----+-----------+----------+
+|       52 | 52 | Sophia    | Conway   |
++----------+----+-----------+----------+
+
