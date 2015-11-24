@@ -1,0 +1,20 @@
+select count(*) from Entry where type <> "other";
++----------+
+| count(*) |
++----------+
+|     2800 |
++----------+
+
+select count(*) from Entry where type =  "other" or "home";                                                                                
++----------+
+| count(*) |
++----------+
+|     1200 |
++----------+
+
+select count(*) from Entry where subtype = "phone";
++----------+
+| count(*) |
++----------+
+|      600 |
++----------+
