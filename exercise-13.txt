@@ -1,0 +1,20 @@
+select count(*) from Entry where type="phone" and contentLineOne like "3%";                                                                
++----------+
+| count(*) |
++----------+
+|        0 |
++----------+
+
+select count(*) from Entry where type="home" and subtype="phone" and contentLineOne not like '%5%';                                        
++----------+
+| count(*) |
++----------+
+|       76 |
++----------+
+
+select count(*) from Entry where type="work" and subtype="phone" and contentLineOne not like '1%';                                       
++----------+
+| count(*) |
++----------+
+|      120 |
++----------+
