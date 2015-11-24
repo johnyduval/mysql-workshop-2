@@ -1,0 +1,6 @@
+insert into Account (email, password, createdOn, modifiedOn) value ('wtv@wtv.com', 'mypassword', '12/12/12', '12/20/13');
+
+insert into AddressBook (accountId, name, createdOn, modifiedOn) value (1234, 'name', '10/10/10', '12/12/12');
+
+insert into Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne, contentLineTwo, contentLineThree, contentLineFour, contentLineFive) values (1234, 'Michael', 'Angelo', '10/10/1908', 'home', 'phone', 'yes', 'no' 'maybe', 'idk', 'ok', 'x');
+insert into Entry (addressBookId, firstName, lastName, birthday, type, subtype, contentLineOne, contentLineTwo, contentLineThree, contentLineFour, contentLineFive) values (5678, 'Dona', 'Telo', '11/11/1918', 'work', 'address', 'yes', 'no', 'maybe', 'idk', 'ok'),(9101, 'Raph', 'Aelle', '12/12/1928', 'other', 'email', 'yes', 'no', 'maybe', 'idk', 'ok');     
