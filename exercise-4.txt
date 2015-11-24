@@ -1,0 +1,19 @@
+use decodemtl_addressbook_import;
+
+update Account set email="yes@yes.com";
+select * from Account;
++----+-------------+------------+---------------------+---------------------+
+| id | email       | password   | createdOn           | modifiedOn          |
++----+-------------+------------+---------------------+---------------------+
+|  1 | yes@yes.com | mypassword | 2012-12-12 00:00:00 | 0000-00-00 00:00:00 |
++----+-------------+------------+---------------------+---------------------+
+
+update AddressBook set name="Leonardo";
+select * from AddressBook;
++----+-----------+----------+---------------------+---------------------+
+| id | accountId | name     | createdOn           | modifiedOn          |
++----+-----------+----------+---------------------+---------------------+
+|  1 |      1234 | Leonardo | 2010-10-10 00:00:00 | 2012-12-12 00:00:00 |
++----+-----------+----------+---------------------+---------------------+
+
+update Entry set firstName="Michael", lastName="Angelo", birthday="19/04/1980" where id=1;
